@@ -1,33 +1,65 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="pl">
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	
-	<title></title>
-	
-	<meta name="description" content="Opis w Google" />
-	<meta name="keywords" content="słowa, kluczowe, wypisane, po, porzecinku" />
-	
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorytm sprawdzający czy dana liczba jest dodatnia</title>
 </head>
-
 <body>
-<img src="https://www.google.com/url?sa=i&url=http%3A%2F%2Finformatyka2.orawskie.pl%2F%3Fpl_grafika-rastrowa%2C35&psig=AOvVaw28Vu91zGK0N3swA3kVSd3x&ust=1644663111256000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLDmwNW99_UCFQAAAAAdAAAAABAD" width="100px" height="100px"/>
+    <h1>Algorytm sprawdzający czy dana liczba jest dodatnia</h1>
+   <div>1. Schemat blokowy.</div> 
+   <div>2. Algorytm podany w pseudo kodzie.</div>
+  <div>3. Algorytm podany w języku C++. </div> 
+  <br>
+  <pre>
+    <code>
+        <pre class="cpp" style="font-family:monospace;"><span style="color: #339900;">#include &lt;iostream&gt;</span>
+            <span style="color: #0000ff;">using</span> <span style="color: #0000ff;">namespace</span> std<span style="color: #008080;">;</span>
+            <span style="color: #0000ff;">int</span> main<span style="color: #008000;">&#40;</span><span style="color: #008000;">&#41;</span>
+            <span style="color: #008000;">&#123;</span><span style="color: #0000ff;">int</span> a<span style="color: #008080;">;</span><span style="color: #0000dd;">cin</span> <span style="color: #000080;">&gt;&gt;</span> a<span style="color: #008080;">;</span>
+            <span style="color: #0000ff;">if</span><span style="color: #008000;">&#40;</span>a<span style="color: #000080;">&gt;</span><span style="color: #0000dd;">0</span><span style="color: #008000;">&#41;</span> <span style="color: #0000dd;">cout</span> <span style="color: #000080;">&lt;&lt;</span> <span style="color: #FF0000;">&quot; DODATNIA&quot;</span><span style="color: #008080;">;</span>
+            <span style="color: #0000ff;">else</span> <span style="color: #0000ff;">if</span><span style="color: #008000;">&#40;</span>a<span style="color: #000080;">&lt;</span><span style="color: #0000dd;">0</span><span style="color: #008000;">&#41;</span> <span style="color: #0000dd;">cout</span> <span style="color: #000080;">&lt;&lt;</span> <span style="color: #FF0000;">&quot; UJEMNA&quot;</span><span style="color: #008080;">;</span>
+            <span style="color: #0000ff;">else</span> <span style="color: #0000dd;">cout</span> <span style="color: #000080;">&lt;&lt;</span> <span style="color: #FF0000;">&quot;ROWNA ZERO&quot;</span><span style="color: #008080;">;</span><span style="color: #008000;">&#125;</span></pre>
+    </code>
+</pre>
+        <br>
+    <div>4. Algorytm podany w JS.</div>
+    <script language="JavaScript">
 
-<br>Grafika – jeden z podstawowych obok malarstwa i rzeźby działów sztuk plastycznych.<br>
-
-<br>Grafika rastrowa jest rodzajem komputerowej grafiki dwuwymiarowej, polega na zapisywaniu jej w pikselach.<br>
-
-<br>Piksel-punkt używany w grafice rastowej<br>
-
-<br>RGB- piksel jest opisany przez 3 składowe, odpowiednio R (red), G (green), B (blue).<br>
-
-<br>bmp – format pliku z grafiką bitmapową<br>
-
-<br>png – Format zapisu pliku obsługujący bezstratną kompresję danych.<br>
-
-<br>ikonna komputerowa – element interfejsu graficznego, niewielki piktogram widoczny na ekranie monitora.<br>
-
+        var nl = getNewLine()
+        
+        function getNewLine() {
+            var agent = navigator.userAgent
+        
+            if (agent.indexOf("Win") >= 0)
+                return "\r\n"
+            else
+                if (agent.indexOf("Mac") >= 0)
+                    return "\r"
+        
+             return "\r"
+        
+        }
+        
+        pagecode = '#include <iostream>
+        
+        using namespace std;
+        
+        int main()
+        {
+            int a;
+            cin >> a;
+            if(a>0) cout << " DODATNIA";
+            else if(a<0) cout << " UJEMNA";
+            else cout << "ROWNA ZERO";
+        }
+        '
+        
+        document.write(pagecode);
+        
+        </script>
+<div>5. Działający skrypt JS. </div>
 
 </body>
 </html>
